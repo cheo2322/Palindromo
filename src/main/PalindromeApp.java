@@ -5,9 +5,15 @@ public class PalindromeApp {
   public static void main(String[] args) {
     int n = 31;
     System.out.println(smallestPalindrome(n));
+    if (smallestPalindrome(n) != 101) {
+      throw new AssertionError();
+    }
 
     n = 456789;
     System.out.println(smallestPalindrome(n));
+    if (smallestPalindrome(n) != 1003001) {
+      throw new AssertionError();
+    }
   }
 
   public static int smallestPalindrome(int n) {
