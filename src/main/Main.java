@@ -1,6 +1,6 @@
 package main;
 
-public class PalindromeApp {
+public class Main {
 
   public static void main(String[] args) {
     int n = 31;
@@ -17,6 +17,7 @@ public class PalindromeApp {
   }
 
   public static int smallestPalindrome(int n) {
+
     boolean flag = false;
     int candidate = n;
 
