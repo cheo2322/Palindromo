@@ -17,6 +17,9 @@ public class Main {
   }
 
   public static int smallestPalindrome(int n) {
+    if (n < 1 || n > 1000000) {
+      throw new IndexOutOfBoundsException("n must be 1 <= n <= 1000000");
+    }
 
     boolean flag = false;
     int candidate = n;
